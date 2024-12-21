@@ -159,10 +159,9 @@ class GameActivity : AppCompatActivity(R.layout.controls) {
 
     private fun setProfileImage() {
         controls.profileImageView.clipToOutline = true
-        val user = Firebase.auth.currentUser
 
         Glide.with(this)
-            .load(user?.photoUrl)
+            .load("https://sun9-69.userapi.com/impg/AVrUevQsGu1A77irdQ2NStpmeAAXRzYB9yeI_g/mTBYSuT4MdQ.jpg?size=1442x2160&quality=95&sign=26c66101a053dafca5dd2db1f0651a44&type=album")
             .override(Target.SIZE_ORIGINAL)
             .into(controls.profileImageView)
     }
